@@ -1,25 +1,35 @@
+//os usings servem para implementar as funcionalidades extermas à aplicação da pagina abaixo. Classes, pacotes, etc
 using Azure.Data.Tables;
 using Microsoft.AspNetCore.Mvc;
 using TrilhaNetAzureDesafio.Context;
 using TrilhaNetAzureDesafio.Models;
 
+//serve pra agrupar as classes a uma mesma funcionalidade, um mesmo objetivo num conjunto de classes
 namespace TrilhaNetAzureDesafio.Controllers;
 
+// defindindo a rota da API no Controller (aquele que é mediador entre a view/Models
 [ApiController]
 [Route("[controller]")]
+
+//classe FuncionarioController que herda de controllrebase com seus respectivos CAMPOS PARAMETRIZADOS, voltados pra
+//conexao com banco, contexto, entidade
 public class FuncionarioController : ControllerBase
 {
     private readonly RHContext _context;
     private readonly string _connectionString;
     private readonly string _tableName;
 
+//metodo da classe
     public FuncionarioController(RHContext context, IConfiguration configuration)
     {
         _context = context;
-        _connectionString = configuration.GetValue<string>("ConnectionStrings:SAConnectionString");
+        //a config ao banco está pegando uma lista de strings pra conectar com o repositorio
+        _connectionString = configuration
+        .GetValue<string>("ConnectionStrings:SAConnectionString");
+        //se conecta c os serviços da azure tbm
         _tableName = configuration.GetValue<string>("ConnectionStrings:AzureTableName");
     }
-
+//metodo privado. ou seja, n podera ser instanciado nos objetos
     private TableClient GetTableClient()
     {
         var serviceClient = new TableServiceClient(_connectionString);
