@@ -1,32 +1,23 @@
 # DIO - Trilha .NET - Nuvem com Microsoft Azure
-www.dio.me
 
 ## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de Nuvem com Microsoft Azure, da trilha .NET da DIO.
+Para este desafio, usei conhecimentos adquiridos no módulo de Nuvem com Microsoft Azure, da trilha .NET da DIO.
 
 ## Contexto
-Você precisa construir um sistema de RH, onde para essa versão inicial do sistema o usuário poderá cadastrar os funcionários de uma empresa. 
+Construi um sistema de RH, onde para essa versão inicial do sistema o usuário poderá cadastrar os funcionários de uma empresa. 
 
-Essa cadastro precisa precisa ter um CRUD, ou seja, deverá permitir obter os registros, criar, salvar e deletar esses registros. A sua aplicação também precisa armazenar logs de toda e qualquer alteração que venha a ocorrer com um funcionário.
+Essa cadastro tem um CRUD, obtendo registros ao criar, salvar e deletar. A sua aplicação também precisa armazenar logs de toda e qualquer alteração que venha a ocorrer com um funcionário.
 
 ## Premissas
-A sua aplicação deverá ser do tipo Web API, Azure Functions ou MVC, fique a vontade para implementar a solução que achar mais adequado.
+Aplicação é do tipo Web API, Azure Functions e com MVC.
 
-A sua aplicação deverá ser implantada no Microsoft Azure, utilizando o App Service para a API, SQL Database para o banco relacional e Azure Table para armazenar os logs.
+Aplicação implantada no Microsoft Azure, utilizando o App Service para a API, SQL Database para o banco relacional e Azure Table para armazenar os logs. Armazena logs de todas as alterações que venha a acontecer com o funcionário. Os logs são armazenados em uma Azure Table.
 
-A sua aplicação deverá armazenar os logs de todas as alterações que venha a acontecer com o funcionário. Os logs deverão serem armazenados em uma Azure Table.
-
-A sua classe principal, a classe Funcionario e a FuncionarioLog, deve ser a seguinte:
+Classe principal, a classe Funcionario e a FuncionarioLog, são as seguintes:
 
 ![Diagrama da classe Funcionario](Imagens/diagrama_classe.png)
 
-A classe FuncionarioLog é filha da classe Funcionario, pois o log terá as mesmas informações da Funcionario.
-
-Não se esqueça de gerar a sua migration para atualização no banco de dados.
-
-## Métodos esperados
-É esperado que você crie o seus métodos conforme a seguir:
-
+A classe FuncionarioLog é filha da classe Funcionario, pois o log terá as mesmas informações da Funcionario. Gerei uma migration para atualização no banco de dados.
 
 **Swagger**
 
@@ -59,10 +50,6 @@ Esse é o schema (model) de Funcionario, utilizado para passar para os métodos 
 ```
 
 ## Ambiente
-Este é um diagrama do ambiente que deverá ser montado no Microsoft Azure, utilizando o App Service para a API, SQL Database para o banco relacional e Azure Table para armazenar os logs.
+Este é um diagrama do ambiente que foi montado no Microsoft Azure, utilizando o App Service para a API, SQL Database para o banco relacional e Azure Table para armazenar os logs.
 
 ![Diagrama da classe Funcionario](Imagens/diagrama_api.png)
-
-
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima, incluindo a sua publicação na nuvem.
