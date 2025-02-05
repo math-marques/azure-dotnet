@@ -1,4 +1,4 @@
-# DIO - Trilha .NET - Nuvem com Microsoft Azure
+# Trilha .NET - Nuvem com Microsoft Azure
 
 ## Desafio de projeto
 Para este desafio, usei conhecimentos adquiridos no módulo de Nuvem com Microsoft Azure, da trilha .NET da DIO.
