@@ -1,9 +1,11 @@
 namespace TrilhaNetAzureDesafio.Models
 {
+//classe
     public class Funcionario
     {
+        //construtor
         public Funcionario() { }
-
+//campos da classe
         public Funcionario(int id, string nome, string endereco, string ramal, string emailProfissional, string departamento, decimal salario, DateTime dataAdmissao)
         {
             Id = id;
@@ -15,7 +17,7 @@ namespace TrilhaNetAzureDesafio.Models
             Salario = salario;
             DataAdmissao = dataAdmissao;
         }
-
+// propriedades da classe
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Endereco { get; set; }
