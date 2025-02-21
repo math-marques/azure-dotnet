@@ -38,7 +38,7 @@ public class FuncionarioController : ControllerBase
         tableClient.CreateIfNotExists();
         return tableClient;
     }
-
+//pega informação através do ID
     [HttpGet("{id}")]
     public IActionResult ObterPorId(int id)
     {
@@ -64,7 +64,7 @@ public class FuncionarioController : ControllerBase
 
         return CreatedAtAction(nameof(ObterPorId), new { id = funcionario.Id }, funcionario);
     }
-
+// insere
     [HttpPut("{id}")]
     public IActionResult Atualizar(int id, Funcionario funcionario)
     {
