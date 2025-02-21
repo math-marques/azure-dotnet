@@ -1,4 +1,6 @@
-﻿{
+//geralmente aqui no launch eu aponto o ambiente no qual devo realizar o debbug das requisições via integrações, a depender da complexidade do projeto
+
+{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
