@@ -64,7 +64,7 @@ public class FuncionarioController : ControllerBase
 
         return CreatedAtAction(nameof(ObterPorId), new { id = funcionario.Id }, funcionario);
     }
-// insere
+// insere por id a atualização do funcionário
     [HttpPut("{id}")]
     public IActionResult Atualizar(int id, Funcionario funcionario)
     {
