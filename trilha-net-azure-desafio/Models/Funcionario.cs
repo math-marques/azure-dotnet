@@ -3,7 +3,7 @@ namespace TrilhaNetAzureDesafio.Models
 //classe
     public class Funcionario
     {
-        //construtor
+        //constructor
         public Funcionario() { }
 //campos da classe
         public Funcionario(int id, string nome, string endereco, string ramal, string emailProfissional, string departamento, decimal salario, DateTime dataAdmissao)
