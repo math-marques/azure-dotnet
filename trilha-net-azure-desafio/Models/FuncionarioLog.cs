@@ -6,7 +6,9 @@ namespace TrilhaNetAzureDesafio.Models
 {
     public class FuncionarioLog : Funcionario, ITableEntity
     {
+    //construtor
         public FuncionarioLog() { }
+//campo
 
         public FuncionarioLog(Funcionario funcionario, TipoAcao tipoAcao, string partitionKey, string rowKey)
         {
@@ -23,7 +25,7 @@ namespace TrilhaNetAzureDesafio.Models
             PartitionKey = partitionKey;
             RowKey = rowKey;
         }
-
+//propriedades
         public TipoAcao TipoAcao { get; set; }
         public string JSON { get; set; }
         public string PartitionKey { get; set; }
