@@ -2,6 +2,7 @@
 
 ## Desafio de projeto
 Para este desafio, usei conhecimentos adquiridos no módulo de Nuvem com Microsoft Azure, da trilha .NET da DIO.
+https://charming-buckthorn-e2e.notion.site/Devops-Tools-1ce8d518a36b8098bfdbcceaefd259b2
 
 ## Contexto
 Construi um sistema de RH, onde para essa versão inicial do sistema o usuário poderá cadastrar os funcionários de uma empresa. 
